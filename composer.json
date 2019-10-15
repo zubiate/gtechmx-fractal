@@ -1,15 +1,15 @@
 {
     "name": "gtechmx/fractal",
     "description": "This is a package to be able to use the fractal library in a better way.",
-    "type": "project",
     "license": "PHP-3.01",
     "authors": [{
         "name": "Miguel Zubiate",
         "email": "mzubiate@reedexpo.com"
     }],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.6.4"
+        "php": ">=5.6.4",
+        "league/fractal": "^0.16.0",
+        "illuminate/support": "5.*"
     },
     "require-dev": {
         "phpunit/phpunit": "~5.0"
