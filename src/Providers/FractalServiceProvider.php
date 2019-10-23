@@ -2,6 +2,7 @@
 
 namespace Gtechmx\Fractal\Providers;
 
+use Gtechmx\Fractal\ArraySerializer;
 use Gtechmx\Fractal\Transformer;
 use Illuminate\Support\ServiceProvider;
 
@@ -25,7 +26,7 @@ class FractalServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->app->singleton('Gtechmx\Fractal\Transformer', function ($app) {
-            return new Transformer;
+            return new Transformer(new ArraySerializer);
         });
     }
 }
