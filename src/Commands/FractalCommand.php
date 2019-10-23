@@ -18,7 +18,7 @@ class FractalCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Create transformer command to Fractal';
 
     /**
      * Create a new command instance.
