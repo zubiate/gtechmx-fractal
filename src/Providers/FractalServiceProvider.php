@@ -8,6 +8,9 @@ use Illuminate\Support\ServiceProvider;
 
 class FractalServiceProvider extends ServiceProvider
 {
+    protected $commands = [
+        'Gtechmx\Fractal\Commands\FractalCommand'
+    ];
     /**
      * Register services.
      *
@@ -15,7 +18,7 @@ class FractalServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands($this->commands);
     }
 
     /**
