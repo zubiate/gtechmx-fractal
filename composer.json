@@ -22,5 +22,15 @@
         "psr-4": {
             "Gtechmx\\Fractal\\Tests\\": "tests"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gtechmx\\Fractal\\Providers\\FractalServiceProvider"
+            ],
+            "aliases": {
+                "Fractal": "Gtechmx\\Fractal\\Facades\\Fractal"
+            }
+        }
     }
 }
